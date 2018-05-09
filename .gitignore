@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+*.pdb
+*.cache
+
+#Debug,Release,obj,x86,x64/  
+Debug/  
+Release/  
+obj/
+x86/
+x64/ 
