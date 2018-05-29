@@ -295,26 +295,30 @@ namespace Inspur.Billing.Commom
             {
                 return;
             }
-            Int32 ret;
-            ret = POS_Control_PrintTestpage(m_hPrinter);
-            switch (ret)
+            else
             {
-                case POS_ES_SUCCESS:
-                    MessageBoxEx.Show("Send success.");
-                    break;
-                case POS_ES_INVALIDPARA:
-                    MessageBoxEx.Show("Parameter error.");
-                    break;
-                case POS_ES_WRITEFAIL:
-                    MessageBoxEx.Show("Write failure.");
-                    break;
-                case POS_ES_OVERTIME:
-                    MessageBoxEx.Show("Send Timeout.");
-                    break;
-                case POS_ES_OTHERERRORS:
-                    MessageBoxEx.Show("Other mistakes.");
-                    break;
+                MessageBoxEx.Show("The printer works well.");
             }
+            //Int32 ret;
+            //ret = POS_Control_PrintTestpage(m_hPrinter);
+            //switch (ret)
+            //{
+            //    case POS_ES_SUCCESS:
+            //        MessageBoxEx.Show("Send success.");
+            //        break;
+            //    case POS_ES_INVALIDPARA:
+            //        MessageBoxEx.Show("Parameter error.");
+            //        break;
+            //    case POS_ES_WRITEFAIL:
+            //        MessageBoxEx.Show("Write failure.");
+            //        break;
+            //    case POS_ES_OVERTIME:
+            //        MessageBoxEx.Show("Send Timeout.");
+            //        break;
+            //    case POS_ES_OTHERERRORS:
+            //        MessageBoxEx.Show("Other mistakes.");
+            //        break;
+            //}
         }
         /// <summary>
         /// 查询状态返回处理
